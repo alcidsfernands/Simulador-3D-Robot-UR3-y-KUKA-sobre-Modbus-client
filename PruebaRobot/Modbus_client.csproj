@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="210-2101520_robotic-arm-white-icon.png" />
+    <None Remove="b-Login-64 Black.png" />
+    <None Remove="r-Multiply-96.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="imagenes\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="210-2101520_robotic-arm-white-icon.png" />
+    <Resource Include="b-Login-64 Black.png" />
+    <Resource Include="r-Multiply-96.png" />
+  </ItemGroup>
+
+</Project>
